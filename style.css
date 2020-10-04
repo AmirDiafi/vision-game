@@ -1,0 +1,88 @@
+.container{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(95, 94, 94, 0.644),
+    -2px -2px 2px rgba(41, 40, 40, 0.644);
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.container p {
+    margin-top: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container h3 {
+    background-color: rgba(36, 189, 61, 0.559);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.644);
+    position: relative;
+}
+
+.container button {
+    background-color: rgba(0, 0, 0, 0.244);
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    right: 1%; 
+    top: 25%;
+    border-radius: 5px;
+}
+
+.container .item{
+    position: relative;
+    width: 20%;
+    height: 200px;
+    margin: .5%;
+    display: inline-block;
+    border-radius: 7px;
+    background: rgb(201, 95, 9);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .item img {
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+.container .item .cover {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transition: all .2s linear;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 7px;
+}
+
+.container .item .cover.selected {
+    bottom: -200px;
+}
+
+.container .item .cover.not-allowed {
+    cursor: not-allowed;
+    background-color: rgba(189, 36, 36, 0.559);
+}
+
+.container .item .cover.allowed {
+    cursor: not-allowed;
+    bottom:0;
+    background-color: rgba(36, 189, 61, 0.559);
+}
